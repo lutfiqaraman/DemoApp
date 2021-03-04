@@ -11,12 +11,18 @@ namespace DemoApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Title = "About Page";
+            if (!IsPostBack)
+            {
+                Title = "About Page";
+            } else
+            {
+                Title = "About Page " + txtData.Text;
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Title = "Button Clicked";
+           
         }
     }
 }

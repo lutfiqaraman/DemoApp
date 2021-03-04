@@ -7,4 +7,5 @@
     <p>This a tutorial about ASP.net Web Form</p>
 
     <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+    <asp:TextBox ID="txtData" runat="server"></asp:TextBox>
 </asp:Content>
