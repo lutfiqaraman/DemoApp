@@ -5,4 +5,6 @@
     <h3>Your application description page.</h3>
     <p>Use this area to provide additional information.</p>
     <p>This a tutorial about ASP.net Web Form</p>
+
+    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
 </asp:Content>
