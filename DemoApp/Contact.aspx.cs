@@ -13,5 +13,10 @@ namespace DemoApp
         {
 
         }
+
+        protected void BtnSend_Click(object sender, EventArgs e)
+        {
+            lblOutput.Text = string.Format("User: {0} said: {1}", txtName.Text, txtMsg.Text);
+        }
     }
 }

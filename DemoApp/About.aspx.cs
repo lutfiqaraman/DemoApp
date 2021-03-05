@@ -14,8 +14,7 @@ namespace DemoApp
             if (!IsPostBack)
             {
                 Title = "About Page";
-            } else
-            {
+            } else {
                 Title = "About Page " + txtData.Text;
             }
         }
