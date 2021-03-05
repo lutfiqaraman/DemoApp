@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="DemoApp.Contact" %>
+<%@ Register Src="~/ContactForm.ascx" TagName="ContactForm" TagPrefix="uc" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
@@ -16,24 +17,8 @@
     </address>
 
     <h3>Contact Us</h3>
-    <table>
-        <tr>
-            <td>
-                <strong>Name</strong>
-            </td>
-            <td>
-                <asp:TextBox runat="server" ID="txtName" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Message</strong>
-            </td>
-            <td>
-                <asp:TextBox runat="server" ID="txtMsg" TextMode="MultiLine" />
-            </td>
-        </tr>
-    </table>
+    <uc:ContactForm runat="server" ID="cfMsg" />
+
     <asp:Button Text="Send" ID="btnSend" runat="server"  OnClick="BtnSend_Click"/>
     <p>
         <asp:Label ID="lblOutput" runat="server"></asp:Label>
