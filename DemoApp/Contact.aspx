@@ -17,8 +17,8 @@
     </address>
 
     <h3>Contact Us</h3>
+    
     <uc:ContactForm runat="server" ID="cfMsg" />
-
     <asp:Button Text="Send" ID="btnSend" runat="server"  OnClick="BtnSend_Click"/>
     <p>
         <asp:Label ID="lblOutput" runat="server"></asp:Label>
